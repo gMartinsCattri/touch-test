@@ -1,0 +1,27 @@
+.VideoGridGeneralContainer{
+    width:100%;
+    background: red;
+    height: 50%;
+    display: flex;
+}
+
+.VideoGridLeftContainer{
+    width: 50%;
+    background: rebeccapurple;
+}
+
+.VideoGridRightContainer{
+    height: 50vh;
+    width: 50%;
+    background: yellow;
+}
+
+.VideoGridThirdContainer{
+    height: 50vh;
+    background: powderblue
+}
+
+.VideoGridIframe{
+    width: 100%;
+    height: 100%;
+}
