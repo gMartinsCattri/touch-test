@@ -22,23 +22,6 @@ function GeneralMatchResults() {
   return (
     <div className={style.ContainerGeneralMatchResults}>
 
-{matchResults.map((sport) => (
-    <div className={style.GeneralMatchResults}>
-          <div key={sport.id}>
-           
-            <div>
-              {sport.results.map((result) => (
-                <div key={result.id}>
-                 <div className={style.containerMatchs}>  <img className={style.imageIcon} src={result.teamAIcon} alt="" /> <p>{result.teamAPoints}</p> <p> VS </p> <p>{result.teamBPoints}</p> <img className={style.imageIcon} src={result.teamBIcon} alt="" /></div>
-                </div>
-              ))}
-            </div>
-          </div>
-          </div>
-        ))}
-        <div className={style.GeneralMatchResults}></div>
-        <div className={style.GeneralMatchResults}></div>
-        
     </div>
   )
 }

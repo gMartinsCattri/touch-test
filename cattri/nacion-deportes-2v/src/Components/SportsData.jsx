@@ -61,15 +61,16 @@ function SportsData({ deporte }) {
                   </div>
                 </div>
                 <div className={styles.sportDataResultsContent}>
+                  <div className={styles.sportDataResultsContainer}>
                   <p className={styles.sportDataTitleParagraph}>Resultados</p>
                   {league.sportResults.map((result) => (
-                    <div key={result.id}>
+                    <div className={styles.sportDataResult} key={result.id}>
                       <img
                         className={styles.ImageIcon}
                         src={result.teamAIcon}
                         alt=""
                       ></img>{" "}
-                      {result.teamAPoints} - {result.teamBPoints}{" "}
+                     <p> {result.teamAPoints}</p><p> VS</p><p> {result.teamBPoints}</p>
                       <img
                         className={styles.ImageIcon}
                         src={result.teamBIcon}
@@ -77,6 +78,7 @@ function SportsData({ deporte }) {
                       ></img>
                     </div>
                   ))}
+                </div>
                 </div>
               </div>
             </div>
